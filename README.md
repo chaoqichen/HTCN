@@ -1,7 +1,7 @@
 # Harmonizing Transferability and Discriminability for Adapting Object Detectors (CVPR 2020)
 A Pytorch Implementation of Harmonizing Transferability and Discriminability for Adapting Object Detectors. 
 
-## Introduction
+## Requirements
 Please follow [faster-rcnn](https://github.com/jwyang/faster-rcnn.pytorch) respository to setup the environment. In this project, we use Pytorch 1.0.1 and our CUDA version is 10.1. 
 
 ## Datasets
@@ -20,7 +20,7 @@ Before training, you should use [CycleGAN](https://github.com/junyanz/pytorch-Cy
 But if you don't want to bother generating the interpolation samples, just using original data can also achieve competitive results.
 
 ## Models
-### Pre-trained Model
+### Pre-trained Models
 In our experiments, we used two pre-trained models on ImageNet, i.e., VGG16 and ResNet101. Please download these two models from:
 * **VGG16:** [Dropbox](https://www.dropbox.com/s/s3brpk0bdq60nyb/vgg16_caffe.pth?dl=0)  [VT Server](https://filebox.ece.vt.edu/~jw2yang/faster-rcnn/pretrained-base-models/vgg16_caffe.pth)
 
@@ -28,7 +28,7 @@ In our experiments, we used two pre-trained models on ImageNet, i.e., VGG16 and 
 
 Download them and write the path in **__C.VGG_PATH** and **__C.RESNET_PATH** at ```lib/model/utils/config.py```.
 
-### Our Trained Model
+### Our Trained Models
 For your convenience, we provide our trained models.
 * **Cityscape to FoggyCityscape(VGG16):**
 * **PASCAL_VOC to Clipart(ResNet101):**
