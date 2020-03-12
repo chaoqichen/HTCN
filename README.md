@@ -1,4 +1,4 @@
-# HTCN (CVPR 2020) 
+# Harmonizing Transferability and Discriminability for Adapting Object Detectors 
 Implementation of Harmonizing Transferability and Discriminability for Adapting Object Detectors (CVPR 2020)
 
 ## Introduction
