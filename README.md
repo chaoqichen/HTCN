@@ -19,15 +19,15 @@ Before training, you should use [CycleGAN](https://github.com/junyanz/pytorch-Cy
 But if you don't want to bother generating the interpolation samples, just using original data can also achieve competitive results.
 
 ## Models
-### Pretrained models
-We used two pre-trained models on ImageNet as backbone for our experiments, VGG16 and ResNet101. You can download these two models from:
+### Pre-trained Model
+In our experiments, we used two pre-trained models on ImageNet, i.e., VGG16 and ResNet101. Please download these two models from:
 * **VGG16:** [Dropbox](https://www.dropbox.com/s/s3brpk0bdq60nyb/vgg16_caffe.pth?dl=0)  [VT Server](https://filebox.ece.vt.edu/~jw2yang/faster-rcnn/pretrained-base-models/vgg16_caffe.pth)
 
 * **ResNet101:** [Dropbox](https://www.dropbox.com/s/iev3tkbz5wyyuz9/resnet101_caffe.pth?dl=0)  [VT Server](https://filebox.ece.vt.edu/~jw2yang/faster-rcnn/pretrained-base-models/resnet101_caffe.pth)
 
 Download them and write the path in **__C.VGG_PATH** and **__C.RESNET_PATH** at ```lib/model/utils/config.py```.
 
-### Our trained models
+### Our Trained Model
 For your convenience, we provide our trained models.
 * **Cityscape to FoggyCityscape(VGG16):**
 * **PASCAL_VOC to Clipart(ResNet101):**
