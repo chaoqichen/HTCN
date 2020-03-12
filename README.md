@@ -1,14 +1,14 @@
 # Harmonizing Transferability and Discriminability for Adapting Object Detectors (CVPR 2020)
-Implementation of Harmonizing Transferability and Discriminability for Adapting Object Detectors 
+A Pytorch Implementation of Harmonizing Transferability and Discriminability for Adapting Object Detectors. 
 
-## Requirements
-Please follow [faster-rcnn](https://github.com/jwyang/faster-rcnn.pytorch) respository to setup the environment. We use **pytorch 1.0.1** and our **CUDA Version is 10.1** for this project. Different versions of pytorch and CUDA will cause errors, which you may find answers to in above link.
+## Introduction
+Please follow [faster-rcnn](https://github.com/jwyang/faster-rcnn.pytorch) respository to setup the environment. In this project, we use Pytorch 1.0.1 and our CUDA version is 10.1. 
 
 ## Datasets
-* **Cityscape, FoggyCityscape:** Download the website [Cityscape](https://www.cityscapes-dataset.com/), see dataset preparation code in [DA-Faster RCNN](https://github.com/yuhuayc/da-faster-rcnn/tree/master/prepare_data)
-* **PASCAL_VOC 07+12:** Please follow the instructions in [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn#beyond-the-demo-installation-for-training-and-testing-models) to prepare VOC datasets.
-* **Clipart:** Dataset preparation instruction link [Cross Domain Detection](https://github.com/naoto0804/cross-domain-detection/tree/master/datasets).
-* **[Sim10k](https://fcav.engin.umich.edu/sim-dataset/)**  
+* **Cityscape and FoggyCityscape:** Download the [Cityscape](https://www.cityscapes-dataset.com/) dataset, see dataset preparation code in [DA-Faster RCNN](https://github.com/yuhuayc/da-faster-rcnn/tree/master/prepare_data).
+* **PASCAL_VOC 07+12:** Please follow the [instruction](https://github.com/rbgirshick/py-faster-rcnn#beyond-the-demo-installation-for-training-and-testing-models) to prepare VOC dataset.
+* **Clipart:** Please follow the [instruction](https://github.com/naoto0804/cross-domain-detection/tree/master/datasets) to prepare Clipart dataset.
+* **Sim10k:** Download the dataset from this [website](https://fcav.engin.umich.edu/sim-dataset/).  
 
 ### Datasets Format
 All codes are written to fit for the **format of PASCAL_VOC**.  
