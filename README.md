@@ -1,10 +1,10 @@
 # Harmonizing Transferability and Discriminability for Adapting Object Detectors 
 Implementation of Harmonizing Transferability and Discriminability for Adapting Object Detectors (CVPR 2020)
 
-## Introduction
+## Requirements
 Please follow [faster-rcnn](https://github.com/jwyang/faster-rcnn.pytorch) respository to setup the environment. We use **pytorch 1.0.1** and our **CUDA Version is 10.1** for this project. Different versions of pytorch and CUDA will cause errors, which you may find answers to in above link.
 
-### Datasets
+## Datasets
 * **Cityscape, FoggyCityscape:** Download the website [Cityscape](https://www.cityscapes-dataset.com/), see dataset preparation code in [DA-Faster RCNN](https://github.com/yuhuayc/da-faster-rcnn/tree/master/prepare_data)
 * **PASCAL_VOC 07+12:** Please follow the instructions in [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn#beyond-the-demo-installation-for-training-and-testing-models) to prepare VOC datasets.
 * **Clipart:** Dataset preparation instruction link [Cross Domain Detection](https://github.com/naoto0804/cross-domain-detection/tree/master/datasets).
@@ -38,4 +38,3 @@ For your convenience, we provide our trained models.
 ## Test
 
 ## Citation
-Please cite the following reference if you find this repository is helpful.
