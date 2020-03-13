@@ -15,9 +15,8 @@ Please follow [faster-rcnn](https://github.com/jwyang/faster-rcnn.pytorch) respo
 All codes are written to fit for the **format of PASCAL_VOC**.  
 If you want to use this code on your own dataset, please arrange the dataset in the format of PASCAL, make dataset class in ```lib/datasets/```, and add it to ```lib/datasets/factory.py```, ```lib/datasets/config_dataset.py```. Then, add the dataset option to ```lib/model/utils/parser_func.py```.
 
-### Data process
-Before training, you should use [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) to generate the interpolation samples for both source and target domain. And then train the model with original and generated data.  
-But if you don't want to bother generating the interpolation samples, just using original data can also achieve competitive results.
+### Data Interpolation
+You should use [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) to generate the interpolation samples for both source and target domain, and then train the model with original and generated data. This step is important for the adaptation from Cityscape to FoggyCityscape and the adaptation from Sim10k to Cityscape. For the adaptation from PASCAL_VOC 07+12 to Clipart, we empirically found that we can also achieve competitive results without interpolation.
 
 ## Models
 ### Pre-trained Models
