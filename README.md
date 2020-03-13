@@ -28,12 +28,6 @@ In our experiments, we used two pre-trained models on ImageNet, i.e., VGG16 and 
 
 Download them and write the path in **__C.VGG_PATH** and **__C.RESNET_PATH** at ```lib/model/utils/config.py```.
 
-### Our Trained Models
-For your convenience, we provide our trained models.
-* **Cityscape to FoggyCityscape(VGG16):**
-* **PASCAL_VOC to Clipart(ResNet101):**
-* **Sim10k to Cityscape(VGG16):**
-
 ## Train
 ```
 CUDA_VISIBLE_DEVICES=$GPU_ID \
@@ -50,3 +44,12 @@ CUDA_VISIBLE_DEVICES=$GPU_ID \
        --load_name path_to_model
 ```
 ## Citation
+If you find this repository useful, please cite our paper:
+```
+@inproceedings{chen2020htcn,
+  title={Harmonizing Transferability and Discriminability for Adapting Object Detectors},
+  author={Chen, Chaoqi and Zheng, Zebiao and Ding, Xinghao and Huang, Yue and Dou, Qi},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2020}
+}
+```
