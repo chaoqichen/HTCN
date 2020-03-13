@@ -1,8 +1,8 @@
 # Harmonizing Transferability and Discriminability for Adapting Object Detectors (CVPR 2020)
 A Pytorch Implementation of Harmonizing Transferability and Discriminability for Adapting Object Detectors. 
 
-## Requirements
-Please follow [faster-rcnn](https://github.com/jwyang/faster-rcnn.pytorch) respository to setup the environment. In this project, we use Pytorch 1.0.1 and our CUDA version is 10.1. 
+## Introduction
+Please follow [faster-rcnn](https://github.com/jwyang/faster-rcnn.pytorch) respository to setup the environment. In this project, we use Pytorch 1.0.1 and CUDA version is 10.1. 
 
 ## Datasets
 ### Datasets Preparation
