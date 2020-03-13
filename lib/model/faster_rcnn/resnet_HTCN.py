@@ -410,7 +410,7 @@ class RandomLayer(nn.Module):
         super(RandomLayer, self).__init__()
         self.input_num = len(input_dim_list)# 2
         self.output_dim = output_dim
-        self.random_matrix = [torch.randn(input_dim_list[i], output_dim) for i in range(self.input_num)]
+        self.random_matrix = [torch.rand(input_dim_list[i], output_dim) for i in range(self.input_num)]
 
     def forward(self, input_list):
         return_list = [torch.mm(input_list[i], self.random_matrix[i]) for i in range(self.input_num)]
