@@ -166,7 +166,7 @@ if __name__ == '__main__':
         fasterRCNN.train()
 
         count_step = 0
-        loss_temp_last = 1  # 初始化为大的值
+        loss_temp_last = 1  
         loss_temp = 0
         loss_rpn_cls_temp = 0
         loss_rpn_box_temp = 0
