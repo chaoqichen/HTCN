@@ -35,7 +35,18 @@ For your convenience, we provide our trained models.
 * **Sim10k to Cityscape(VGG16):**
 
 ## Train
-
+```
+CUDA_VISIBLE_DEVICES=$GPU_ID \
+       python trainval_net_HTCN.py \
+       --dataset source_dataset --dataset_t target_dataset \
+       --net vgg16/resnet101 
+```
 ## Test
-
+```
+CUDA_VISIBLE_DEVICES=$GPU_ID \
+       python test_net_HTCN.py \
+       --dataset source_dataset --dataset_t target_dataset \
+       --net vgg16/resnet101  \
+       --load_name path_to_model
+```
 ## Citation
