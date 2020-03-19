@@ -52,3 +52,11 @@ If you find this repository useful, please cite our paper:
   year={2020}
 }
 ```
+```
+@article{chen2020harmonizing,
+  title={Harmonizing Transferability and Discriminability for Adapting Object Detectors},
+  author={Chen, Chaoqi and Zheng, Zebiao and Ding, Xinghao and Huang, Yue and Dou, Qi},
+  journal={arXiv preprint arXiv:2003.06297},
+  year={2020}
+}
+```
