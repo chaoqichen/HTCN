@@ -45,7 +45,7 @@ def parse_args():
                         default=7, type=int)
     parser.add_argument('--gamma', dest='gamma',
                         help='value of gamma',
-                        default=5, type=float)
+                        default=3, type=float)
     parser.add_argument('--disp_interval', dest='disp_interval',
                         help='number of iterations to display',
                         default=100, type=int)
