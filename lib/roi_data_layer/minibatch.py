@@ -16,7 +16,7 @@ from scipy.misc import imread
 from model.utils.config import cfg
 from model.utils.blob import prep_im_for_blob, im_list_to_blob
 import pdb
-def get_minibatch(roidb, num_classes,seg_return=False):
+def get_minibatch(roidb, num_classes):
   """Given a roidb, construct a minibatch sampled from it."""
   num_images = len(roidb)
   # Sample random scales to use for each image in this batch
@@ -48,10 +48,8 @@ def get_minibatch(roidb, num_classes,seg_return=False):
   blobs['im_info'] = np.array(
     [[im_blob.shape[1], im_blob.shape[2], im_scales[0]]],
     dtype=np.float32)
-  if seg_return:
-    blobs['seg_map'] = roidb[0]['seg_map']
+
   blobs['img_id'] = roidb[0]['img_id']
-  blobs['path'] = roidb[0]['image']
 
   return blobs
 
