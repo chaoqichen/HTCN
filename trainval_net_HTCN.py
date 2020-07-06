@@ -247,8 +247,8 @@ if __name__ == '__main__':
             #put target data into variable
             im_data.data.resize_(data_t[0].size()).copy_(data_t[0])
             im_info.data.resize_(data_t[1].size()).copy_(data_t[1])
-            gt_boxes.data.resize_(data_t[2].size()).copy_(data_t[2])
-            num_boxes.data.resize_(data_t[3].size()).copy_(data_t[3])
+            gt_boxes.data.resize_(1, 1, 5).zero_()
+            num_boxes.data.resize_(1).zero_()
 
             out_d_pixel, out_d, out_d_mid, out_d_ins = fasterRCNN(im_data, im_info, gt_boxes, num_boxes, target=True)
             out_d_ins_softmax = F.softmax(out_d_ins, 1)
